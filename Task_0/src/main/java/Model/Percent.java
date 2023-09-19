@@ -17,7 +17,7 @@ public class Percent {
     }
 
     public int countSumRound(int pr){
-        return Math.round(this.sum + (float)pr/100*this.sum);
+        return Math.round(countSum(this.sum,pr));
     }
 
 }

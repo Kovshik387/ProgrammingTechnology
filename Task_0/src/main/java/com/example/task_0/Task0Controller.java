@@ -59,17 +59,16 @@ public class Task0Controller {
             SmallMoneyLabel.setText(Float.toString(percent.countPr(3)));
             DefaultMoneyLabel.setText(Float.toString(percent.countPr(9)));
             BigMoneyLabel.setText(Float.toString(percent.countPr(15)));
-            this.ControlSum.setText("");
 
         } catch (Exception ex){
             MoneyTextArea.setStyle("-fx-background-color:red;");
             SmallMoneyLabel.setText("");
             DefaultMoneyLabel.setText("");
             BigMoneyLabel.setText("");
-            this.ControlSum.setText("");
         }
         finally {
             RoundButton.setVisible(false);
+            this.ControlSum.setText("");
         }
     }
 
