@@ -14,7 +14,7 @@
 
 ### Результат
 
-![Result_Task_0](/Docs/Gif/Task_0.gif)
+![Result_Task_0](/Docs/Gif/Task0.gif)
 
 ---
 
@@ -57,4 +57,4 @@ public abstract class Shape {
 
 ### Результат
 
-![Task_1_Result](/Docs/Gif/Task_1.gif)
+![Task_1_Result](/Docs/Gif/Task1.gif)
