@@ -10,7 +10,7 @@
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
 
-   <Canvas fx:id="sheet" height="335.0" onMouseClicked="#ClickMouse" width="522.0">
+   <Canvas fx:id="sheet" height="331.0" nodeOrientation="INHERIT" onMouseClicked="#ClickMouse" width="517.0">
       <VBox.margin>
          <Insets />
       </VBox.margin>
@@ -21,6 +21,6 @@
       <ColorPicker fx:id="colorPicker" />
       <Separator prefWidth="200.0" />
       <TextField fx:id="sizeNumber" />
-      <Label fx:id="infoShape" text="Label" />
+      <Label fx:id="infoShape" text="    Размер фигуры" />
    </FlowPane>
 </VBox>

@@ -24,5 +24,4 @@ public abstract class Shape {
         return this.color;
     }
     public abstract void drawShape(GraphicsContext context);
-
 }
