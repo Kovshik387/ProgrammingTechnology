@@ -48,6 +48,7 @@ public class HelloController {
     }
 
     public void ClickMouse(MouseEvent mouseEvent) {
+        sizeNumber.setText("10");
 
         GraphicsContext context = this.sheet.getGraphicsContext2D();
 
