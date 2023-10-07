@@ -3,14 +3,15 @@ package Model;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 
-public class Circule extends Shape  {
+public class Circle extends Shape  {
     private final Double height;
-    public Circule(int x,int y, Color color, Double height, Double width){
+
+    public Circle(int x, int y, Color color, Double height, Double width){
         super(x, y, color);
         this.height = height;
     }
 
-    public Circule(){
+    public Circle(){
         super(20,20,Color.AQUA); this.height = 20.0;
     }
 

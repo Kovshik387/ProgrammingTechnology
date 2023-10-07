@@ -1,23 +1,17 @@
 package com.example.task_2;
 
 import Factory.ShapeFactory;
-import Model.Circule;
 import Model.Shape;
-import Model.Square;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.concurrent.ExecutionException;
 
-public class HelloController implements Initializable {
+public class Controller implements Initializable {
     public Canvas sheet;
     public ColorPicker colorPicker;
     public Label infoShape;
@@ -28,23 +22,31 @@ public class HelloController implements Initializable {
     private GraphicsContext context;
     private int initialValue;
 
-    public HelloController() {
+    private static void initializeHandlers(Controller controller){
+        controller.sheet.setOnMouseClicked(controller::canvasClickHandler);
     }
 
-    public void ClickMouse(MouseEvent mouseEvent) {
-
-        double x = mouseEvent.getX(); double y = mouseEvent.getY();
+    private void canvasClickHandler(MouseEvent event){
+        double x = event.getX(); double y = event.getY();
 
         shape = factory.createShape(nameShape.getText());
 
         if (shape == null) {
-            System.out.println("Несуществующая фигура");
+            this.displayWarning("Такой фигуры не существует");
             return;
         }
 
         shape.setColor(this.colorPicker.getValue());
         shape.setX((int)x); shape.setY((int)y);
         shape.drawShape(context);
+    }
+
+    private void displayWarning(String text){
+        var alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Сообщение");
+        alert.setHeaderText("Ошибка");
+        alert.setContentText(text);
+        alert.showAndWait();
     }
 
     @Override
@@ -54,5 +56,7 @@ public class HelloController implements Initializable {
 
         var valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(5,30,initialValue);
         spinner.setValueFactory(valueFactory);
+
+        Controller.initializeHandlers(this);
     }
 }
