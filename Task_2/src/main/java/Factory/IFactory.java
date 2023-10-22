@@ -3,5 +3,5 @@ package Factory;
 import Model.Shape;
 
 public interface IFactory {
-    Shape createShape(String name);
+    public Shape createShape(String name);
 }
