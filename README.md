@@ -8,6 +8,7 @@
 - ### Factory method https://github.com/Kovshik387/ProggramingTechnology-Shapes/tree/factory-method
 - ### Factory collection https://github.com/Kovshik387/ProggramingTechnology-Shapes/tree/factory-collection
 - ### Factory Map https://github.com/Kovshik387/ProggramingTechnology-Shapes/tree/factory-hash-map
+- ### Prototype https://github.com/Kovshik387/ProgrammingTechnology-Prototype
 
 ---
 
