@@ -21,3 +21,7 @@
 ## Task Observer
 
 - ### Observer https://github.com/Kovshik387/ProgrammingTechnology-Observer
+
+## Task Decorator
+
+- ### Decorator https://github.com/Kovshik387/ProgrammingTechnology-Decorator
