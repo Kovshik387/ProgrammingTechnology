@@ -29,4 +29,6 @@
 
 - ### Decorator https://github.com/Kovshik387/ProgrammingTechnology-Decorator
 
-  
+## Task Тестирование
+
+- ### SmtpTest https://github.com/Kovshik387/ProggramingTechnology-SmptTest
