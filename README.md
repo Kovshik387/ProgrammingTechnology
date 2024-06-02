@@ -1,3 +1,5 @@
+# 1 Семестр
+
 # ProgrammingTechnology
 
 ## Курсовой проект 
@@ -25,10 +27,24 @@
 
 - ### Observer https://github.com/Kovshik387/ProgrammingTechnology-Observer
 
-## Task Decorator
+# 2 Семестр
+
+## Task Декоратор
 
 - ### Decorator https://github.com/Kovshik387/ProgrammingTechnology-Decorator
+
+## Task DAO Цепочка обязанностей
+
+- ### DAO https://github.com/Kovshik387/ProggramingTechnology-DAO
+
+## Task Поставщик-потребитель
+
+- ### Product-Consumer https://github.com/Kovshik387/ProggramingTechnology-Producer-Consumer
 
 ## Task Тестирование
 
 - ### SmtpTest https://github.com/Kovshik387/ProggramingTechnology-SmptTest
+
+## Task MeteoService
+
+- ### MeteoService https://github.com/wheyw/MeteoServer/commit/62d664dc3a1cea0dd768faa517681151a5aa7397
